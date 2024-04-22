@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Cookie</title>
+</head>
+<body>
+    <h1>Danh sách Cookie</h1>
+    <ul id="cookie-list"></ul>
+
+    <h2>Thêm mới Cookie</h2>
+    <input type="text" id="cookie-name" placeholder="Tên cookie">
+    <input type="text" id="cookie-value" placeholder="Giá trị cookie">
+    <button onclick="addCookie()">Thêm Cookie</button>
+
+    <script>
+        function addCookie() {
+            var name = document.getElementById("cookie-name").value;
+            var value = document.getElementById("cookie-value").value;
+            document.cookie = name + "=" + value;
+            displayCookies();
+        }
+
+        function displayCookies() {
+            var cookies = document.cookie.split("; ");
+            var cookieList = document.getElementById("cookie-list");
+            cookieList.innerHTML = "";
+            cookies.forEach(function(cookie) {
+                var parts = cookie.split("=");
+                var name = parts[0];
+                var value = parts[1];
+                var listItem = document.createElement("li");
+                listItem.textContent = name + ": " + value;
+                cookieList.appendChild(listItem);
+            });
+        }
+
+        displayCookies();
+    </script>
+</body>
+</html>

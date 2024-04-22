@@ -1,0 +1,23 @@
+/* Định dạng cho danh sách cookie */
+#cookie-list {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#cookie-list .cookie-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#cookie-list .cookie-item .cookie-info {
+    font-weight: bold;
+}
+
+#cookie-list .cookie-item .edit-btn,
+#cookie-list .cookie-item .delete-btn {
+    margin-left: 5px;
+}

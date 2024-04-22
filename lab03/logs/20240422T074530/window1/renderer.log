@@ -1,0 +1,5 @@
+2024-04-22 07:45:32.018 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/directory-to-open","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-04-22 07:45:32.358 [info] Started local extension host with pid 4925.
+2024-04-22 07:45:35.419 [info] [perf] Render performance baseline is 22ms
+2024-04-22 07:46:07.097 [info] Started local extension host with pid 5054.
+2024-04-22 07:46:09.719 [info] [perf] Render performance baseline is 21ms

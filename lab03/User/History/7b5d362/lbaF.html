@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Cookie</title>
+</head>
+<body>
+    <h1>Danh sách Cookie</h1>
+    <ul id="cookie-list"></ul>
+
+    <h2>Thêm mới Cookie</h2>
+    <label for="cookie-name">Tên Cookie:</label>
+    <input type="text" id="cookie-name" placeholder="Tên cookie">
+    <label for="cookie-value">Giá trị Cookie:</label>
+    <input type="text" id="cookie-value" placeholder="Giá trị cookie">
+    <button onclick="addCookie()">Thêm Cookie</button>
+
+    <h2>Sửa Cookie</h2>
+    <label for="edit-cookie-name">Tên Cookie cần sửa:</label>
+    <input type="text" id="edit-cookie-name" placeholder="Tên cookie cần sửa">
+    <label for="edit-cookie-value">Giá trị mới:</label>
+    <input type="text" id="edit-cookie-value" placeholder="Giá trị mới">
+    <button onclick="editCookie()">Sửa Cookie</button>
+
+    <h2>Xóa Cookie</h2>
+    <label for="delete-cookie-name">Tên Cookie cần xóa:</label>
+    <input type="text" id="delete-cookie-name" placeholder="Tên cookie cần xóa">
+    <button onclick="deleteCookie()">Xóa Cookie</button>
+
+    <script>
+        function addCookie() {
+            var name = document.getElementById("cookie-name").value;
+            var value = document.getElementById("cookie-value").value;
+            document.cookie = name + "=" + value;
+            displayCookies();
+        }
+
+        function editCookie() {
+            var name = document.getElementById("edit-cookie-name").value;
+            var value = document.getElementById("edit-cookie-value").value;
+            document.cookie = name + "=" + value;
+            displayCookies();
+        }
+
+        function deleteCookie() {
+            var name = document.getElementById("delete-cookie-name").value;
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            displayCookies();
+        }
+
+        function displayCookies() {
+            var cookies = document.cookie.split("; ");
+            var cookieList = document.getElementById("cookie-list");
+            cookieList.innerHTML = "";
+            cookies.forEach(function(cookie) {
+                var parts = cookie.split("=");
+                var name = parts[0];
+                var value = parts[1];
+                var listItem = document.createElement("li");
+                listItem.textContent = name + ": " + value;
+                cookieList.appendChild(listItem);
+            });
+        }
+
+        displayCookies();
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+2024-04-22 07:46:47.227 [error] electron #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_TIMED_OUT
+2024-04-22 07:59:39.427 [error] electron #24: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
+2024-04-22 07:59:39.428 [error] electron #25: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_ADDRESS_UNREACHABLE
+2024-04-22 10:25:27.812 [error] electron #245: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED
+2024-04-22 10:26:55.909 [error] electron #251: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED
+2024-04-22 10:26:55.910 [error] electron #253: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED
+2024-04-22 10:27:38.235 [error] electron #254: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
+2024-04-22 10:27:38.235 [error] electron #255: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED

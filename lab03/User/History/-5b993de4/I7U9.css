@@ -1,0 +1,57 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    margin-bottom: 0px; /* Khoảng cách giữa header và phần content */
+  }
+  
+  /* Wrapper styles */
+  .wrapper {
+    display: flex;  
+  }
+  .section {
+    padding: 10px;
+    border: 2px solid white; /* Để dễ nhận biết */
+  }
+  
+  .section-large {
+    flex: 2; /* Phần lớn nhất */
+    height: 600px;
+    
+    
+  }
+  .section-left{
+    width: 160px;
+    height: 600px;
+    justify-content: center;
+    border: solid gray;
+  }
+  
+  
+  .section-right{
+    width: 160px;
+    height: 600px;
+    border: solid gray;
+  }
+  
+  .flex-box{
+    height:40px;
+    width: 130px;
+    background-color: gray;
+    color: black;
+   }
+   .flex-box h2 {
+    font-size: 30px;
+    }
+   .flex-item{
+  
+    color: #0D6DFD;
+    
+   }
+  
+  
